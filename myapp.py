@@ -22,6 +22,7 @@ def search():
         s =s + key + '  ' + str(meteo[key]) + '<br>'
     print(s, count, '<br>' )
     return ''
+
 if __name__ == "__main__":
     meteo = ''
     s ='no_data'
