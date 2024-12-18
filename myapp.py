@@ -1,13 +1,14 @@
 import flask
 from flask import Flask, request
 import json
+from datetime import datetime
 server_port = 5000
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
 
-    return ("flask.render_template super_ 1303")
+    return (f'flask.render_template super_ 1303  {datetime.now()}')
 
 @app.route('/search/', methods=['POST'])
 def search():
