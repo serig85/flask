@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     with open('in.txt', 'a') as file:
-        file.write(f'flask.render_template super_ 1303  {datetime.now()}')
+        file.write(f'flask.render_template super_ 1303  {datetime.now()} \n')
 
     return (f'flask.render_template super_ 1303  new_generate {datetime.now()}')
 
