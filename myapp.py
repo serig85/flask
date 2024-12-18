@@ -7,8 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
 
-    return ("flask.render_template"
-            "")
+    return ("flask.render_template super")
 
 @app.route('/search/', methods=['POST'])
 def search():
